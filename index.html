@@ -7,6 +7,7 @@
     <meta name="description" content="Earn money online with mulapal! Complete tasks like watching videos, clicking ads, answering surveys, and promoting ads. Join mulapal today and start earning instantly!">
     <meta name="keywords" content="mulapal, mulapal app, mulapal agencies, mulapal Kenya, mulapal Uganda, mulapal Cameroon, mulapal Ghana, mulapal Nigeria, mulapal Malawi, mulapal Rwanda, is mulapal legit, how mulapal works, digital tasks, earn money online, watch videos for money, click ads to earn, mulapal registration, mulapal login, affiliate marketing, mobile money earnings">
     <link href="https://fonts.googleapis.com/css2?family=Aviel:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="s8256vW6OIKhmExRnzbUSpgxL59EGegsanmJd8zABag" />
     <style>
         * {
             margin: 0;
@@ -224,4 +225,119 @@
     </script>
 
 </body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-button {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        animation: bounce 1.5s infinite;
+        position: fixed;
+        z-index: 9999;
+    }
+    .contact-button img {
+        width: 30px;
+        height: 30px;
+    }
+    .notification-badge {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: red;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-options {
+        position: fixed;
+        bottom: 70px;
+        right: 15px;
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 9999;
+    }
+    .contact-options a {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .contact-options a img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    .callout-text {
+        position: fixed;
+        bottom: 120px;
+        right: 15px;
+        background: #ffcc00;
+        padding: 8px 12px;
+        border-radius: 10px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+        font-size: 12px;
+        font-weight: bold;
+        display: none;
+        z-index: 9999;
+    }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+</style>
+
+
+<div class="callout-text" id="calloutText">Need assistance? Contact us here</div>
+<div class="contact-options" id="contactOptions">
+    <a href="https://wa.me/+254707267559?text=Hello+guide+me+on+mulapal+agencies" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" /> Chat on WhatsApp</a>
+    <a href="https://mulapal.com/register.php?ref=Bahatike"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call" /> Call Us</a>
+    <a href="https://wa.me/+254707267559?text=Hello+guide+me+on+mulapal+agencies" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Support" /> Talk to customer care</a>
+</div>
+<div class="contact-button" id="contactButton">
+    <span class="notification-badge">1</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contact" />
+</div>
+<script>
+    let contactButton = document.getElementById("contactButton");
+    let contactOptions = document.getElementById("contactOptions");
+    let calloutText = document.getElementById("calloutText");
+    
+    window.onload = function() {
+        calloutText.style.display = "block";
+        setTimeout(() => {
+            calloutText.style.display = "none";
+        }, 5000);
+    };
+    
+    contactButton.addEventListener("click", () => {
+        contactOptions.style.display = contactOptions.style.display === "flex" ? "none" : "flex";
+    });
+</script>
 </html>
