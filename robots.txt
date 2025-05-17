@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mulapal-agencies.github.io/sitemap.xml
